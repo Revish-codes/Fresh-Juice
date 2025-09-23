@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* body{
+    width: 1900px;
+} */
+
+
+
+
+html {
+  scroll-behavior: smooth;
+  min-width: 700px;
+}
+
+.active-icon {
+    color: blue;
+}
+
+
+
+
+.global-width{
+    max-width: 1460px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+section.mobile-view{
+    margin: 60px auto 20px auto;
+    max-width: 400px;;
+    height: 700px;
+    overflow-y: auto;  
+    overflow-x: hidden; 
+    position: relative;
+}
+
+section.mobile-view::before{
+    background: #b3b2b2;
+    box-shadow: -15px 8px 20px -10px rgba(0, 0, 0, .2);
+    content: "";
+    display: inline-block;
+    height: 62px;
+    width: 100%;
+    border-radius: 46px 46px 0 0;
+    margin-bottom: -3px;
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 400px;
+    overflow: hidden;
+    z-index: 999;
+}
+section.mobile-view::after{
+    background: #b3b2b2;
+    box-shadow: -15px 8px 20px -10px rgba(0, 0, 0, .2);
+    content: "";
+    display: inline-block;
+    height: 62px;
+    width: 100%;
+    border-radius: 0 0 46px 46px;
+    
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 400px;
+    overflow: hidden;
+    z-index: 999;
+}
+
+section.mobile-view #preview{
+    scroll-behavior: smooth;
+}
+
+.responsive svg:hover{
+        color: rgb(34, 28, 206);
+        transform: translateY(-5px);
+        cursor: pointer;
+}
+.head-right h5:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.click-btn:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.main-container-ws {
+  height: 750px;
+  margin: 0;
+  background: linear-gradient(to bottom, gray 50%, white 50%);
+}
+
+section.mobile-view .hero-bg{
+     height: 450px;
+    background: linear-gradient(to bottom, rgb(234,234,239) 50%, #ffffff 50%);   
+}
+
+
+.hero h1{
+    text-align: center;
+    
+}
+section.mobile-view .hero h1 {
+  font-size: 38px;  
+}
+
+section.mobile-view .hero-para{
+    flex-direction: column;
+    gap: 0;
+}
+
+section.mobile-view .hero-img{
+    width: 90%;
+}
+section.mobile-view .hero-img .coconut{
+    height: 150px;
+    left: -70px;
+}
+section.mobile-view .hero-img .bottles{
+    height: 225px;
+}
+section.mobile-view .hero-img .bannana{
+    height: 93px;
+    left:60px;
+}
+section.mobile-view .hero-img .mix-fruit{
+    height: 150px;
+    right: -50px;
+}
+
+section.mobile-view .flavor-1,
+section.mobile-view .flavor-2,
+section.mobile-view .flavor-3{
+    padding: 30px 0;
+}
+
+section.mobile-view .flavor-1-container,
+section.mobile-view .flavor-2-container,
+section.mobile-view .flavor-3-container,
+section.mobile-view .flavor-4-container{
+    flex-direction: column;
+}
+section.mobile-view .flavor-2-container,
+section.mobile-view .flavor-4-container{
+    flex-direction: column-reverse;
+}
+
+section.mobile-view .f1-left,
+section.mobile-view .f2-left,
+section.mobile-view .f3-left,
+section.mobile-view .f4-left{
+    width: 100%;
+    padding: 0 20px;
+}
+
+section.mobile-view .f1-left h1,
+section.mobile-view .f2-left h1,
+section.mobile-view .f3-left h1,
+section.mobile-view .f4-left h1{
+    font-size: 28px;
+}
+section.mobile-view .f1-btn,
+section.mobile-view .f2-btn,
+section.mobile-view .f3-btn,
+section.mobile-view .f4-btn{
+    width: 33%;
+}
+section.mobile-view .f1-right,
+section.mobile-view .f2-right,
+section.mobile-view .f4-right{
+    width: 100%;
+}
+section.mobile-view .f1-right,
+section.mobile-view .f2-right,
+section.mobile-view .f3-right{
+    display: flex;
+    justify-content: end;
+}
+
+section.mobile-view .f2-img{
+    z-index: 9;
+}
+section.mobile-view .f3-img{
+    height: 280px;
+}
+
+section.mobile-view .f1-grape1,
+section.mobile-view .f2-watermelon,
+section.mobile-view .f2-grape1{
+    height: 120px;
+    left: 20px;
+    bottom: -20px;
+}
+
+section.mobile-view .f1-grape1{
+    bottom: 58px;
+}
+
+section.mobile-view .f3-grape1{
+    left: -65px;
+    height: 115px;
+    bottom: -23px;
+}
+
+section.mobile-view .f2-watermelon{
+        height: 300px !important;
+    left: 40px !important;
+}
+section.mobile-view .f4-watermelon{
+    left: 25px;
+    bottom: -15px;
+    height: 100px;
+}
+
+section.mobile-view .f1-grape2,
+section.mobile-view .f2-lychee,
+section.mobile-view .f3ZFF-grape2{
+    height: 100px;
+    right: 0;
+    bottom: -20px;
+    z-index: 10;
+}
+
+section.mobile-view .f1-grape2{
+    height: 60px;
+    bottom: 8px;
+    right: 30px;
+}
+
+section.mobile-view .f3-grape2{
+        height: 180px;
+        right: -75px;
+}
+section.mobile-view .f4-lychee{
+        right: -42px;
+        bottom: 6px;
+}
+section.mobile-view .f4-img{
+    height: 300px;
+}
+
+section.mobile-view .service{
+    flex-direction: column;
+    font-size: 20px;
+    padding: 2rem;
+    align-items: center;
+}
+
+section.mobile-view .contact-container{
+    gap: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+section.mobile-view .contact-left{
+    gap: 6px;
+}
+section.mobile-view .contact-mid{
+    gap: 2px;
+}
+
+section.mobile-view form{
+    background-color: rgb(227, 222, 222);
+}
+section.mobile-view lable{
+    display: flex;
+    gap: 20px;
+}
+
+section.mobile-view button,
+section.mobile-view .email-box{
+    width: 300px !important;
+}
+
+section.mobile-view .foot-left h6{
+    text-align: center;
+}
+
+section.mobile-view .foot-left a{
+    display: none;
+}
