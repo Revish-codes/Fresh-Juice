@@ -3,7 +3,7 @@
     margin: 0;
 }
 body{
-    min-width: 500px;
+    min-width: 700px;
 }
 
 
@@ -174,22 +174,41 @@ section.mobile-view .hero-para{
 section.mobile-view .hero-img{
     width: 90%;
 }
+
+section.ipad-view .hero-img .coconut{
+    height: 255px;
+    left: -119px;
+    bottom: -5px;
+}
+
 section.mobile-view .hero-img .coconut{
     height: 150px;
     left: -70px;
 }
+
+section.ipad-view .hero-img .bottles{
+    height: 400px;
+}
+
 section.mobile-view .hero-img .bottles{
     height: 225px;
 }
 
-section.ipad-view .hero-img .bottles{
-    height: 430px;
+section.ipad-view .hero-img .bannana{
+    z-index: 10;
+    left: 215px;
 }
 
 section.mobile-view .hero-img .bannana{
     height: 93px;
     left:60px;
 }
+
+section.ipad-view .hero-img .mix-fruit{
+    height: 200px;
+    right: -130px;
+}
+
 section.mobile-view .hero-img .mix-fruit{
     height: 150px;
     right: -50px;
