@@ -2,16 +2,16 @@
     padding: 0;
     margin: 0;
 }
-/* body{
-    width: 1900px;
-} */
+body{
+    min-width: 500px;
+}
 
 
 
 
 html {
   scroll-behavior: smooth;
-  min-width: 700px;
+  
 }
 
 .active-icon {
@@ -76,6 +76,51 @@ section.mobile-view #preview{
     scroll-behavior: smooth;
 }
 
+section.ipad-view{
+    margin: 30px auto 0 auto ;
+    max-width: 800px;
+    height: 800px;
+    overflow-y: auto;  
+    overflow-x: hidden; 
+    position: relative;
+    border-left: 10px solid #b3b2b2;
+    border-right: 10px solid #b3b2b2;
+}
+
+section.ipad-view::before {
+    background: #b3b2b2;
+    box-shadow: -15px 8px 20px -10px rgba(0, 0, 0, .2);
+    content: "";
+    display: inline-block;
+    height: 30px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: -3px;
+    position: fixed;
+    top: 105px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 800px;
+    overflow: hidden;
+    z-index: 999;
+}
+section.ipad-view::after{
+    background: #b3b2b2;
+    box-shadow: -15px 8px 20px -10px rgba(0, 0, 0, .2);
+    content: "";
+    display: inline-block;
+    height: 30px;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 800px;
+    overflow: hidden;
+    z-index: 999;
+}
+
 .responsive svg:hover{
         color: rgb(34, 28, 206);
         transform: translateY(-5px);
@@ -93,10 +138,18 @@ section.mobile-view #preview{
     border: 2px solid white;
 }
 
+.main-container-website.mobile-view{
+    min-width: 700px;
+}
+
 .main-container-ws {
   height: 750px;
   margin: 0;
   background: linear-gradient(to bottom, gray 50%, white 50%);
+}
+
+section.ipad-view .main-container-ws{
+    height: 710px;
 }
 
 section.mobile-view .hero-bg{
@@ -128,6 +181,11 @@ section.mobile-view .hero-img .coconut{
 section.mobile-view .hero-img .bottles{
     height: 225px;
 }
+
+section.ipad-view .hero-img .bottles{
+    height: 430px;
+}
+
 section.mobile-view .hero-img .bannana{
     height: 93px;
     left:60px;
@@ -154,6 +212,10 @@ section.mobile-view .flavor-4-container{
     flex-direction: column-reverse;
 }
 
+section.ipad-view .f1-img{
+    height: 320px;
+}
+
 section.mobile-view .f1-left,
 section.mobile-view .f2-left,
 section.mobile-view .f3-left,
@@ -168,11 +230,18 @@ section.mobile-view .f3-left h1,
 section.mobile-view .f4-left h1{
     font-size: 28px;
 }
+section.ipad-view .f1-btn,
+section.ipad-view .f2-btn,
+section.ipad-view .f3-btn,
+section.ipad-view .f4-btn{
+    width: 35%;
+}
+
 section.mobile-view .f1-btn,
 section.mobile-view .f2-btn,
 section.mobile-view .f3-btn,
 section.mobile-view .f4-btn{
-    width: 33%;
+    width: 45%;
 }
 section.mobile-view .f1-right,
 section.mobile-view .f2-right,
@@ -186,12 +255,33 @@ section.mobile-view .f3-right{
     justify-content: end;
 }
 
+section.ipad-view .f2-img{
+    height: 285px;
+}
+
 section.mobile-view .f2-img{
     z-index: 9;
+}
+
+section.ipad-view .f3-img{
+    height: 340px;
 }
 section.mobile-view .f3-img{
     height: 280px;
 }
+
+
+section.ipad-view .f1-grape1{
+    height: 100px;
+    left: 120px;
+    bottom: 30px;
+}
+
+section.ipad-view .f1-grape2{
+    height: 50px;
+    right: 155px;
+    bottom: -10px; 
+    }
 
 section.mobile-view .f1-grape1,
 section.mobile-view .f2-watermelon,
@@ -205,6 +295,12 @@ section.mobile-view .f1-grape1{
     bottom: 58px;
 }
 
+section.ipad-view .f3-grape1{
+    left: 5px;
+    height: 70px;
+    bottom: 6px;
+}
+
 section.mobile-view .f3-grape1{
     left: -65px;
     height: 115px;
@@ -215,10 +311,21 @@ section.mobile-view .f2-watermelon{
         height: 300px !important;
     left: 40px !important;
 }
+
+section.ipad-view .f4-watermelon{
+    height: 82px;
+    left: 100px;
+    bottom: 20px;
+}
+
 section.mobile-view .f4-watermelon{
     left: 25px;
     bottom: -15px;
     height: 100px;
+}
+
+section.ipad-view .f2-lychee{
+    right: 30px;
 }
 
 section.mobile-view .f1-grape2,
@@ -235,15 +342,37 @@ section.mobile-view .f1-grape2{
     bottom: 8px;
     right: 30px;
 }
+section.ipad-view .f3-grape2{
+    height: 180px;
+    right: -110px;
+    bottom: 12px;
+}
+
+section.mobile-view .f3-grape2{
+        height: 185px;
+        bottom: 5px;
+}
 
 section.mobile-view .f3-grape2{
         height: 180px;
         right: -75px;
 }
+
+section.ipad-view .f4-lychee{
+    height: 180px;
+    right: 76px;
+    bottom: 35px;
+}
+
 section.mobile-view .f4-lychee{
         right: -42px;
         bottom: 6px;
 }
+
+section.ipad-view .f4-img{
+    height: 270px;
+}
+
 section.mobile-view .f4-img{
     height: 300px;
 }
@@ -261,12 +390,21 @@ section.mobile-view .contact-container{
     display: flex;
     justify-content: center;
 }
+section.ipad-view .contact-container{
+    column-gap: 100px;
+    row-gap: 30px;
+    justify-content: center;
+}
 
 section.mobile-view .contact-left{
     gap: 6px;
 }
 section.mobile-view .contact-mid{
     gap: 2px;
+}
+
+section.ipad-view .right-left{
+    margin: 20px auto;
 }
 
 section.mobile-view form{
